@@ -10,7 +10,7 @@ export var next_scene: PackedScene
 func _on_body_entered(body: PhysicsBody2D):
 	print("HiMOM")
 	teleport()
-func _on_area_entered
+###func _on_area_entered
 
 func _get_configuration_warning() -> String:
 	return "The property Next Level can't be empty" if not next_scene else ""
