@@ -1,4 +1,5 @@
 extends Area2D
+onready var ray = $RayCast2D
 
 var tile_size = 64
 var inputs = {"ui_right": Vector2.RIGHT,
@@ -16,4 +17,7 @@ func _unhandled_input(event):
 			move(dir)
 
 func move(dir):
-	position += inputs[dir] * tile_size
+	ray.cast_to = inputs[dir] * tile_size
+	ray.force_raycast_update()
+	if !ray.is_colliding():
+		position += inputs[dir] * tile_size
