@@ -13,6 +13,5 @@
 position = Vector2( 505.874, 299.814 )
 
 [node name="Portal2D" parent="." instance=ExtResource( 4 )]
-position = Vector2( 514.774, 483.661 )
-input_pickable = false
+position = Vector2( 207.182, 395.98 )
 next_scene = ExtResource( 3 )
